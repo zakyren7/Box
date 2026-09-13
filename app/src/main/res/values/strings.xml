@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TVBox</string>
+    <string name="app_name">全能影库</string>
     <string name="app_home">Home</string>
-    <string name="app_source"></string>
+    <string name="app_source">http://www.xn--sss604efuw.net/tv</string>
 
     // Home Page //
     <string name="hm_ok">Load Complete</string>
@@ -35,8 +35,8 @@
     <string name="det_fav">Favorite</string>
     <string name="det_fav_add">Added to Favorite</string>
     <string name="det_fav_del">Removed from Favorite</string>
-    <string name="det_fav_star">★ Favorite</string>
-    <string name="det_fav_unstar">☆ Favorite</string>
+    <string name="det_fav_star">鈽?Favorite</string>
+    <string name="det_fav_unstar">鈽?Favorite</string>
     <string name="det_url">Play URL Copied</string>
     <string name="det_source"></string>
     <string name="det_year">Year</string>
@@ -175,7 +175,7 @@
     <string name="exo_track_selection_none">None</string>
     <string name="exo_track_selection_auto">Auto</string>
     <string name="exo_track_unknown">Unknown</string>
-    <string name="exo_track_resolution">%1$d × %2$d</string>
+    <string name="exo_track_resolution">%1$d 脳 %2$d</string>
     <string name="exo_track_mono">Mono</string>
     <string name="exo_track_stereo">Stereo</string>
     <string name="exo_track_surround">Surround Sound</string>
@@ -186,7 +186,7 @@
     <string name="exo_track_role_commentary">Commentary</string>
     <string name="exo_track_role_closed_captions">CC</string>
     <string name="exo_track_bitrate">%1$.2f Mbps</string>
-    <string name="exo_item_list">%1$s，%2$s</string>
+    <string name="exo_item_list">%1$s锛?2$s</string>
     <string name="sub_size">Size</string>
     <string name="sub_delay">Delay</string>
     <string name="sub_style">Style</string>
@@ -206,7 +206,7 @@
         <item>https://doh.360.cn/dns-query</item>
     </string-array>
 
-    <!-- 视频设置 相关数据 -->
+    <!-- 瑙嗛璁剧疆 鐩稿叧鏁版嵁 -->
     <string-array name="media_title_tag">
         <item>General</item>
         <item>ExoPlayer</item>
@@ -219,7 +219,7 @@
         <item>IJK</item>
     </string-array>
 
-    <!--    用于解释怎么处理数据  -->
+    <!--    鐢ㄤ簬瑙ｉ噴鎬庝箞澶勭悊鏁版嵁  -->
     <string-array name="media_content_tag_General">
         <item>VodPlayerPreferred</item>
     </string-array>
@@ -234,17 +234,17 @@
         <item>IjkCache</item>
     </string-array>
 
-    <!--    用于展示名称-->
+    <!--    鐢ㄤ簬灞曠ず鍚嶇О-->
     <string-array name="media_content_General">
         <item>VodPlayerPreferred</item>
-        <!--        用于强制使用设置中的配置 比如设置 首选设置配置 ,首选配置文件 优先单独设置的就不管-->
+        <!--        鐢ㄤ簬寮哄埗浣跨敤璁剧疆涓殑閰嶇疆 姣斿璁剧疆 棣栭€夎缃厤缃?,棣栭€夐厤缃枃浠?浼樺厛鍗曠嫭璁剧疆鐨勫氨涓嶇-->
     </string-array>
 
 
     <string-array name="media_content_ExoPlayer">
-        <!--  渲染器选择  -->
+        <!--  娓叉煋鍣ㄩ€夋嫨  -->
         <item>Renderer</item>
-<!--        &lt;!&ndash;首选 扩展渲染器 核心渲染器 关 &ndash;&gt;-->
+<!--        &lt;!&ndash;棣栭€?鎵╁睍娓叉煋鍣?鏍稿績娓叉煋鍣?鍏?&ndash;&gt;-->
 <!--        <item>RendererMode</item>-->
     </string-array>
 
@@ -269,6 +269,6 @@
         <item>Prefer setting configuration</item>
     </string-array>
 
-    <!-- 结束 视频设置 相关配置 -->
+    <!-- 缁撴潫 瑙嗛璁剧疆 鐩稿叧閰嶇疆 -->
 
 </resources>
