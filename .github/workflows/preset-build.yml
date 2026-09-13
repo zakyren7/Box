@@ -22,6 +22,7 @@ jobs:
       - name: Build Debug APK
         shell: bash
         run: |
+          touch local.properties
           chmod +x gradlew
           ./gradlew assembleDebug --parallel --warning-mode none
       - name: Upload APK (Release)
