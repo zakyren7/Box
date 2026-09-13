@@ -61,14 +61,6 @@ public class App extends MultiDexApplication {
     @Override
     public void onCreate() {
         super.onCreate();
-        // preset: seed backup config sources on first launch
-        if (com.orhanobut.hawk.Hawk.get(com.github.tvbox.osc.util.HawkConfig.API_HISTORY, new java.util.ArrayList<String>()).isEmpty()) {
-            java.util.ArrayList<String> seeds = new java.util.ArrayList<>();
-            seeds.add("http://www.xn--sss604efuw.net/tv");
-            seeds.add("https://tv.nxog.top/moyu.json");
-            seeds.add("https://chuanshuo.77blog.cn/tv.json");
-            com.orhanobut.hawk.Hawk.put(com.github.tvbox.osc.util.HawkConfig.API_HISTORY, seeds);
-        }
         SubtitleHelper.initSubtitleColor(this);
         initParams();
         // takagen99 : Initialize Locale
@@ -142,6 +134,14 @@ public class App extends MultiDexApplication {
         // Hawk
         Hawk.init(this).build();
         Hawk.put(HawkConfig.DEBUG_OPEN, false);
+        // preset: seed backup config sources on first launch (must run AFTER Hawk.init)
+        if (Hawk.get(HawkConfig.API_HISTORY, new java.util.ArrayList<String>()).isEmpty()) {
+            java.util.ArrayList<String> seeds = new java.util.ArrayList<>();
+            seeds.add("http://www.xn--sss604efuw.net/tv");
+            seeds.add("https://tv.nxog.top/moyu.json");
+            seeds.add("https://chuanshuo.77blog.cn/tv.json");
+            Hawk.put(HawkConfig.API_HISTORY, seeds);
+        }
 
         // 首页选项
         putDefault(HawkConfig.HOME_SHOW_SOURCE, true);       //数据源显示: true=开启, false=关闭
